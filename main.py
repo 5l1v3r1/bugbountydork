@@ -3,13 +3,14 @@ import os
 import argparse
 
 
-
+# Add in argument options
 parser = argparse.ArgumentParser(description='Which Domain to target')
 parser.add_argument('-d', action='store', dest='domain',
-                    help='type in the domain to target i.e tesco.com')
+                    help='type in the domain to target i.e target.com')
 
 results = parser.parse_args()
 
+# 
 if results.domain == None:
 	print ("Please enter the domain you wish to target: main.py -d target.com")
 	exit()
